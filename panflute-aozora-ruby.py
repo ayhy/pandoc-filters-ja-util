@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-from panflute import toJSONFilter, run_filter, Str, Para, debug, convert_text, ListContainer
+from panflute import toJSONFilter, run_filter, Str, Para, debug, convert_text
 
 
 def getRubyTag(string):
@@ -33,9 +33,9 @@ def getRubyTag(string):
 def rubify(elem, doc):
     if type(elem) == Str:
         rubied_text = getRubyTag(elem.text)
-        rubied_para = convert_text(rubied_text)
         rubied_elems=[]
-        if isinstance(rubied_para, ListContainer):
+        if "ruby" in rubied_text:
+            rubied_para = convert_text(rubied_text)[0] #para
             for item in rubied_para.content:
                 rubied_elems.append(item)
             for i, item in enumerate(rubied_elems, elem.index+1):
