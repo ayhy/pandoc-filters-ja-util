@@ -6,8 +6,8 @@ pandoc-filters-ja-util
   * `panflute-aozora-ruby`
     * 青空文庫記法の`|漢字《ルビ》`を`<ruby>漢字<rt>ルビ</rt></ruby>`に変換するフィルタ（※[haskel版](https://github.com/minoki/pandoc-aozora-ruby)は既に存在するので車輪の再発明です）
   * `panflute-linebreak-paragraph`
-    * pandocのオプション `-t markdown+hard_line_breaks` で改行を`<br />`に変更できますが、これを段落切り替え`</p><p>`に変換するフィルタ
-  * `panflute-horizontal-dash`, `panflute-vertical-dash`
+    * pandocのオプション `markdown+hard_line_breaks` で改行を`<br />`に変更できますが、これを段落切り替え`</p><p>`に変換するフィルタ
+  * `panflute-dash-horizontal`, `panflute-dash-vertical`
     * ダッシュ（―）を表示フォントによる途切れをなくすために罫線（─ or │）に変更するフィルタ
 
 ## Prerequisite
