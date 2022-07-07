@@ -2,7 +2,7 @@ pandoc-filters-ja-util
 ====
 
 * pandoc lua filter for writing japanese novels (ruby tag, connected dashes), requires `pandoc 2.17` or above.
-* outputs html or epub with html tas.
+* these filter works with  html / epub output format.
 
 ### convert_ruby.lua
 usage: `pandoc -L convert_ruby.lua`
