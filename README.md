@@ -5,7 +5,7 @@ pandoc-filters-ja-util
 * outputs html or epub with html tas.
 
 ### convert_ruby.lua
-usage: `pandoc --L convert_ruby.lua`
+usage: `pandoc -L convert_ruby.lua`
 * input:`｜本文《ふりがな》` -> output:`<ruby>本文<rt>ふりがな</rt></ruby>`
 * ルビ開始記号`｜` or `|`、ふりがな開始記号`《`、ルビ終了記号`》`はカスタマイズできます。luaフィルタを開いて冒頭の変数を変更してください。
 * luaの制約上、漢字・カタカナ・ひらがなの連続に開始記号なしでルビが振れる青空文庫の仕様には対応していません。
