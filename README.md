@@ -1,4 +1,4 @@
-pandoc-filters-ja-util (deprecated)
+pandoc-filters-ja-util
 ====
 
 * pandoc lua filter for writing japanese novels (ruby tag, connected dashes), requires `pandoc 2.17` or above.
@@ -11,7 +11,9 @@ usage: `pandoc --L convert_ruby.lua`
 * luaの制約上、漢字・カタカナ・ひらがなの連続に開始記号なしでルビが振れる青空文庫の仕様には対応していません。
 
 ### elongate_dash.lua
+
 usage: `pandoc -L elongate_dash.lua -C dash_horizontal.css` （when `writing-mode: horizontal-tb;`）
+
 usage: `pandoc -L elongate_dash.lua -C dash_vertical.css` （when `writing-mode: vertical-lr;`）
 
 * input:`――` -> output:`<span class="dash"><span class="dashline">―</span>　</rt></ruby>`
